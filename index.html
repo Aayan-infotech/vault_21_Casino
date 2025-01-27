@@ -1,13 +1,713 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My wonderful website</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>Welcome to my wonderful website</h1>
-        <p>You will never find another place as cool as this</p>
-        <p><img src="img/bridge.jpg" alt="A nice picture of The Bridge"/></p>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wonderful Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/discoverGames.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/voult.png" alt="VAULT21" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-white" href="#">About Game</a>
+            <a class="nav-link text-white" href="#">Reviews</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row align-items-center gx-4 gy-5">
+        <!-- Left Section -->
+        <div class="col-12 col-md-6 text-light">
+          <h2 class="display-5 fw-bold">Welcome to VAULT21:</h2>
+          <h2 class="display-5 fw-bold">Your ultimate gaming destination</h2>
+          <p class="fs-6">
+            Unlock the thrill of endless entertainment with VAULT21, the premier
+            gaming app offering a rich blend of casino classics, rummy, and a
+            variety of exciting games all in one place.
+          </p>
+          <div class="d-flex gap-3 phone-view">
+            <a href="#" class="btn btn-dark btn-lg">
+              <img src="img/apple.jpg" class="me-3" alt="App Store" />
+              <div class="d-flex flex-column">
+                <p class="mb-0 download-app">Download on the</p>
+                <h5 class="fw-bold">App Store</h5>
+              </div>
+            </a>
+            <a href="#" class="btn btn-dark btn-lg">
+              <img src="img/googleplay.svg" class="me-3" alt="Google Play" />
+              <div class="d-flex flex-column">
+                <p class="mb-0 download-app text-start">GET IT ON</p>
+                <h5 class="fw-bold">Google Play</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-12 col-md-6 text-center">
+          <img
+            src="img/voulttash.webp"
+            alt="Gaming Cards"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+
+      <div class="text-center mt-5 text-light">
+        <h5>Experience excellence in gaming</h5>
+      </div>
+
+      <!-- Row for larger screens -->
+      <div class="row gx-4 gy-4 text-center mt-5 d-none d-md-flex">
+        <div class="col-6 col-md-3">
+          <div class="icon-box">
+            <p class="mb-2">Start</p>
+            <img src="img/start.png" alt="Start" />
+            <p>Start</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="icon-box">
+            <p class="mb-2">Challenge</p>
+            <img src="img/start.png" alt="Challenge" />
+            <p>Challenge</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="icon-box">
+            <p class="mb-2">Compete</p>
+            <img src="img/start.png" alt="Compete" />
+            <p>Compete</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="icon-box">
+            <p class="mb-2">Win</p>
+            <img src="img/start.png" alt="Win" />
+            <p>Win</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel for smaller screens -->
+      <div
+        id="iconCarousel"
+        class="carousel slide d-md-none mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <div class="icon-box">
+              <p class="mb-2">Start</p>
+              <img src="img/start.png" alt="Start" />
+              <p>Start</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="icon-box">
+              <p class="mb-2">Challenge</p>
+              <img src="img/start.png" alt="Challenge" />
+              <p>Challenge</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="icon-box">
+              <p class="mb-2">Compete</p>
+              <img src="img/start.png" alt="Compete" />
+              <p>Compete</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="icon-box">
+              <p class="mb-2">Win</p>
+              <img src="img/start.png" alt="Win" />
+              <p>Win</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#iconCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#iconCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row align-items-center gx-4 gy-5 mt-5">
+        <!-- Left Section -->
+        <div class="col-12 col-md-6 text-center">
+          <img
+            src="img/ludo.jpg"
+            alt="Gaming Cards"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-12 col-md-6 text-light">
+          <h2 class="display-5 fw-bold">About to VAULT21:</h2>
+          <h2 class="display-5 fw-bold">The ultimate gaming experience</h2>
+          <p class="fs-6">
+            Unlock the thrill of endless entertainment with VAULT21, the premier
+            gaming app offering a rich blend of casino classics, rummy, and a
+            variety of exciting games all in one place.
+          </p>
+          <button type="button" class="btn btn-warning fw-bold rounded-pill">
+            Install Now
+          </button>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+
+      <div class="row gx-4 gy-4 text-center mt-5 d-none d-md-flex">
+        <div class="col-6 col-md-3">
+          <div class="second-icon-box">
+            <p class="mb-2">Variety</p>
+            <img src="img/varity.png" alt="Start" />
+            <p>Limitless</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="second-icon-box">
+            <p class="mb-2">Strategy</p>
+            <img src="img/varity.png" alt="Challenge" />
+            <p>Precision</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="second-icon-box">
+            <p class="mb-2">Competition</p>
+            <img src="img/varity.png" alt="Compete" />
+            <p>Global</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="second-icon-box">
+            <p class="mb-2">Experience</p>
+            <img src="img/varity.png" alt="Win" />
+            <p>Immersive</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel for smaller screens -->
+      <div
+        id="iconSecondCarousel"
+        class="carousel slide d-md-none mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <div class="second-icon-box">
+              <p class="mb-2">Variety</p>
+              <img src="img/varity.png" alt="Start" />
+              <p>Limitless</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="second-icon-box">
+              <p class="mb-2">Strategy</p>
+              <img src="img/varity.png" alt="Challenge" />
+              <p>Precision</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="second-icon-box">
+              <p class="mb-2">Competition</p>
+              <img src="img/varity.png" alt="Compete" />
+              <p>Global</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="second-icon-box">
+              <p class="mb-2">Experience</p>
+              <img src="img/varity.png" alt="Win" />
+              <p>Immersive</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#iconSecondCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#iconSecondCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- ------------varity real time---------------- -->
+      <div class="row align-items-center gx-4 gy-5 mt-5">
+        <!-- Left Section -->
+        <div class="col-12 col-md-4 text-light">
+          <h2 class="display-5 fw-bold">Game Experience:</h2>
+          <h6 class="display-6 fw-bold">
+            Engage with thrilling gameplay at every turn
+          </h6>
+          <p class="fs-6">
+            Unlock the thrill of endless entertainment with VAULT21, the premier
+            gaming app offering a rich blend of casino classics, rummy, and a
+            variety of exciting games all in one place.
+          </p>
+          <button type="button" class="btn btn-warning fw-bold rounded-pill">
+            Install Now
+          </button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-12 col-md-8 mx-auto">
+          <div
+            class="d-flex flex-wrap justify-content-evenly align-items-center card-custom-width"
+          >
+            <div class="card-group-1">
+              <div class="card mb-5" style="width: 18rem">
+                <div class="card card-custom">
+                  <div class="card-body text-center">
+                    <img src="img/varity.png" alt="Start" class="mb-3" />
+                    <h5 class="card-title">Variety</h5>
+                    <p class="card-text">
+                      A wide selection of games that cater to every player’s
+                      preferences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <div class="card card-custom">
+                  <div class="card-body text-center">
+                    <img src="img/varity.png" alt="Start" class="mb-3" />
+                    <h5 class="card-title">Rewards</h5>
+                    <p class="card-text">
+                      Earn bonuses, rewards, and upgrades as you play and win.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card mb-5" style="width: 18rem">
+                <div class="card card-custom1">
+                  <div class="card-body text-center">
+                    <img src="img/varity.png" alt="Start" class="mb-3" />
+                    <h5 class="card-title1">Real-Time</h5>
+                    <p class="card-text1">
+                      Play with or against others in real-time, enhancing
+                      competition and thrill.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <div class="card card-custom">
+                  <div class="card-body text-center">
+                    <img src="img/varity.png" alt="Start" class="mb-3" />
+                    <h5 class="card-title">Tournaments</h5>
+                    <p class="card-text">
+                      Compete in global tournaments to test your skills and
+                      claim your place among the top players.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 text-light">
+        <h2 class="display-5 fw-bold">What users say about us?</h2>
+      </div>
+
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Circle dots for navigation -->
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>Tom Roberts</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    VALLEY offers an immense experience for casino games. The
+                    game does a great job of replicating the thrill of a real
+                    casino.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>Emily Davis</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    The user interface is intuitive and easy to navigate. The
+                    games are engaging with high-quality visuals.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>Sarah William</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    I appreciate how quickly I can jump into the game and start
+                    playing. The modern design and graphics enhance the overall
+                    atmosphere.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>User 4</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    The variety of games is fantastic. There's something for
+                    everyone, and the rewards system is very rewarding.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>User 5</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    The real-time play feature is amazing. It adds a whole new
+                    level of excitement to the games.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="carousel-custom">
+                  <div class="user-name">
+                    <img
+                      src="img/profile.avif"
+                      class="me-3"
+                      alt="profile_img"
+                    />
+                    <h4>User 6</h4>
+                  </div>
+                  <div class="user-testimonial">
+                    The tournaments are a great way to test your skills against
+                    players from around the world.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 mb-5 text-light">
+        <h2 class="display-5 fw-bold">Discover the Games of VAULT21</h2>
+        <p>
+          Immerse yourself in a world of endless possibilities. VAULT21 brings
+          you an exciting collection of casino games, rummy, and more. Each game
+          offers a unique experience designed to entertain, challenge, and
+          reward you. Dive in, and let the fun begin!
+        </p>
+      </div>
+
+      <div
+        id="cashiontestimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        style="position: relative"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="img/Casino.png" class="d-block w-100" alt="..." />
+            <div
+              class="card position-absolute"
+              style="
+                width: 200px;
+                height: auto;
+                top: 20px;
+                right: 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #ffd700;
+                padding: 10px;
+                border-radius: 8px;
+              "
+            >
+              <h5 class="card-title" style="font-size: 16px; margin: 0">
+                Casino Games
+              </h5>
+              <p class="card-text" style="font-size: 12px; margin: 5px 0 0">
+                Experience the thrill of classic casino games like slots,
+                blackjack, and roulette.
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div class="carousel-item position-relative">
+            <img src="img/Casino.png" class="d-block w-100" alt="..." />
+            <div
+              class="card position-absolute"
+              style="
+                width: 200px;
+                height: auto;
+                top: 20px;
+                right: 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #ffd700;
+                padding: 10px;
+                border-radius: 8px;
+              "
+            >
+              <h5 class="card-title" style="font-size: 16px; margin: 0">
+                Casino Games
+              </h5>
+              <p class="card-text" style="font-size: 12px; margin: 5px 0 0">
+                Explore exciting games and more fun!
+              </p>
+            </div>
+          </div>
+
+          <!-- Third Slide -->
+          <div class="carousel-item position-relative">
+            <img src="img/Casino.png" class="d-block w-100" alt="..." />
+            <div
+              class="card position-absolute"
+              style="
+                width: 200px;
+                height: auto;
+                top: 20px;
+                right: 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #ffd700;
+                padding: 10px;
+                border-radius: 8px;
+              "
+            >
+              <h5 class="card-title" style="font-size: 16px; margin: 0">
+                Casino Games
+              </h5>
+              <p class="card-text" style="font-size: 12px; margin: 5px 0 0">
+                Try your luck with the best games available.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dot Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#cashiontestimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#cashiontestimonialCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+      </div>
+
+      <!-- -------------------footer------------------ -->
+      <footer class="footer text-lg-start mt-5">
+        <div class="container">
+          <div class="row text-md-start">
+            <div class="col-md-4 col-12 mb-4">
+              <img src="img/voult.png" alt="VAULT21" class="img-fluid mb-2" />
+              <p>
+                Unleashing excitement, mastering strategy, defining victory.
+              </p>
+            </div>
+            <div class="col-md-8 col-12 mb-4">
+              <div class="row">
+                <div class="col-12">
+                  <h5>Contact Us:</h5>
+                </div>
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between"
+                >
+                  <div class="mb-2 mb-md-0">
+                    <p class="text-small mb-1">
+                      <strong>Phone:<br /></strong> +1234567890
+                    </p>
+                  </div>
+                  <div class="mb-2 mb-md-0">
+                    <p class="text-small mb-1">
+                      <strong>Email:<br /></strong> vault21@gmail.com
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-small">
+                      <strong>Address:<br /></strong> Building name 123 XYZ
+                      City,<br />
+                      State name, Country
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center text-md-start">
+            <div class="col-md-3 col-6 mb-2">
+              <p class="text-small-below mb-0">
+                VAULT 21 © COPYRIGHTS ALL RIGHTS RESERVED
+              </p>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+              <p class="text-small-below mb-0">
+                <a href="#">PRIVACY POLICY</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+              <p class="text-small-below mb-0">
+                <a href="#">TERMS & CONDITIONS</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+              <p class="text-small-below mb-0">DEVELOPED BY AAYAN INFOTECH</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <style>
+    .carousel-inner-layout img {
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      height: 400px;
+    }
+    .info-box {
+      position: absolute;
+      top: 70%;
+      right: 7%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      max-width: 221px;
+    }
+    .info-box h4 {
+      color: #f5d742;
+    }
+    .carousel-indicators {
+      position: static;
+      margin-top: 10px;
+    }
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #f5d742;
+    }
+  </style>
 </html>
