@@ -15,11 +15,11 @@ body {
 }
 
 .display-5 {
-  color: #ffe86a;
+  color: #D6C46D;
 }
 
 .display-6 {
-  color: #ffe86a;
+  color: #D6C46D;
   font-size: 20px;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .btn-warning {
-  background-color: #837840;
+  background: linear-gradient(180deg, #E2D076 0%, #AC941E 100%);
   width: 200px;
   padding: 10px;
   color: white;
@@ -88,13 +88,13 @@ body {
 }
 
 .second-icon-box img {
-  width: 35%;
-  height: auto;
+  width: 25%;
+  height: 40%;
   margin-bottom: 0.5rem;
 }
 
 .second-icon-box p {
-  color: #fff;
+  color: #D6C46D;
   margin: 0;
 }
 
@@ -104,12 +104,12 @@ body {
 }
 
 .card {
-  background-color: #222;
+  background: linear-gradient(131.87deg, #474747 -2.18%, rgba(72, 72, 72, 0) 103.93%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .card-custom {
-  background-color: #222;
+  background: linear-gradient(131.87deg, #474747 -2.18%, rgba(72, 72, 72, 0) 103.93%);
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -122,7 +122,7 @@ body {
 }
 
 .card-custom1 {
-  background-color: #d9c667;
+  background: linear-gradient(180deg, #E2D076 0%, #AC941E 100%);
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -131,11 +131,11 @@ body {
 }
 
 .card-title {
-  color: #ffe86a;
+  color: #D6C46D;
 }
 
 .card-text {
-  color: #ffe86a;
+  color: #D6C46D;
 }
 
 .card-title1 {
@@ -167,7 +167,7 @@ body {
 }
 
 .carousel-custom {
-  background-color: #1a1a1a;
+  background: linear-gradient(131.87deg, #474747 -2.18%, rgba(72, 72, 72, 0) 103.93%);
   color: #ffffff;
   padding: 20px;
   border-radius: 15px;

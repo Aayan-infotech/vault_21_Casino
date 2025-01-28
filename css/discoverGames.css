@@ -12,9 +12,12 @@
   .card h5 {
     font-weight: bold;
   }
+  .card-body img {
+    height: 100px;
+  }
   
   .card p {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
   }
   
