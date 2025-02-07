@@ -16,8 +16,19 @@
     height: 100px;
   }
   
+
+  @media screen and (min-width:768px) {
+    .custom-top{
+      top: 24%;
+      max-width: 500px;
+      position: absolute;
+    }
+  }
   .card p {
     font-size: 15px;
     line-height: 1.5;
   }
-  
+  /* .custome-fluid-container{
+    background-image: url("../img/Background.png");
+  }
+   */
