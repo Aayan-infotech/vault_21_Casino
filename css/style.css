@@ -232,8 +232,8 @@ body {
 }
 
 .footer-logo-fluid {
-  height: 40px;
-  width: 150px;
+  max-height: 40px;
+  width: 200px;
 }
 
 @media (max-width: 768px) {
