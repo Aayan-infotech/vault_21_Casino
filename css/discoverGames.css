@@ -1,0 +1,34 @@
+.carousel-indicators {
+    position: static;
+    margin-top: 10px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f5d742;
+  }
+  
+  .card h5 {
+    font-weight: bold;
+  }
+  .card-body img {
+    height: 100px;
+  }
+  
+
+  @media screen and (min-width:768px) {
+    .custom-top{
+      top: 20%;
+      max-width: 500px;
+      position: absolute;
+    }
+  }
+  .card p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  /* .custome-fluid-container{
+    background-image: url("../img/Background.png");
+  }
+   */
