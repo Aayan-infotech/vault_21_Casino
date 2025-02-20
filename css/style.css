@@ -11,15 +11,15 @@ body {
 
 .navbar-dark .navbar-brand img {
   max-height: 100px;
-  width: 200px;
+  width: 230px;
 }
 
 .display-5 {
-  color: #D6C46D;
+  color: #d8c14e;
 }
 
 .display-6 {
-  color: #D6C46D;
+  color: #d8c14e;
   font-size: 20px;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .second-icon-box p {
-  color: #D6C46D;
+  color: #d8c14e;
   margin: 0;
 }
 
@@ -131,11 +131,11 @@ body {
 }
 
 .card-title {
-  color: #D6C46D;
+  color: #d8c14e;
 }
 
 .card-text {
-  color: #D6C46D;
+  color: #d8c14e;
 }
 
 .card-title1 {
@@ -233,7 +233,7 @@ body {
 
 .footer-logo-fluid {
   max-height: 100px;
-  width: 200px;
+  width: 230px;
 }
 
 @media (max-width: 768px) {
